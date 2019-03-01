@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+.App {
+  text-align: center;
+  font-family: Roboto;
+}
+
+.formBudget{
+  /*position: absolute;
+  left: 100px;*/
+  border: 2px solid green;
+  border-radius: 5px;
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+}
+
+#budgetLabel{
+  /*position: absolute;*/
+  font-size: 20px;
+  left: 20px;
+}
+
+#budgetValue{
+  /*position: absolute;*/
+  width: 340px;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin-top: 10pX;
+  /*left: 0px;*/
+  font-size: 20px;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+}
+
+#budgetValue:focus{
+  outline: none;
+}
+
+#calcBtn{
+  /*position: absolute;*/
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background: white;
+  margin-top: 20px;
+  top: 100px;
+  left: 20px;
+  color: green;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+}
+
+#calcBtn-disabled{
+  /*position: absolute;*/
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background: white;
+  margin-top: 20px;
+  top: 100px;
+  left: 20px;
+  color: gray;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+}
+
+@keyframes flash {
+  0% {
+    border: 2px solid red;
+  }
+  50% {
+    border: 2px solid rgba(255, 255, 255, 0);
+  }
+  100% {
+    border: 2px solid red;
+  }
+}
+
+#calcBtn-disabled:focus{
+  animation: flash linear 1s 2 forwards;
+  outline: none;
+}
+
+#calcBtn-disabled:focus{
+  outline: none;
+}
+
+#calcBtn:hover{
+  background: green;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#calcBtn:focus{
+  outline: none;
+}
+
+.formExpense{
+  /*position: absolute;*/
+  left: 100px;
+  top: 300px;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+}
+
+#expenseLabel1{
+  /*position: absolute;*/
+  font-size: 20px;
+  left: 20px;
+  top: 10%;
+}
+
+#expenseLabel2{
+  /*position: absolute;*/
+  font-size: 20px;
+  left: 20px;
+  top: 40%;
+}
+
+#expenseText, #expenseValue{
+  /*position: absolute;*/
+  width: 340px;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid red;
+  border-radius: 5px;
+  margin-top: 10pX;
+  left: 0px;
+  font-size: 20px;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+}
+
+#expenseText:focus, #expenseValue:focus{
+  outline: none;
+}
+
+#addBtn{
+  /*position: absolute;*/
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background: white;
+  margin-top: 20px;
+  top: 200px;
+  left: 20px;
+  color: red;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+}
+
+#addBtn-disabled{
+  /*position: absolute;*/
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background: white;
+  margin-top: 20px;
+  top: 200px;
+  left: 20px;
+  color: gray;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+}
+
+#addBtn:hover{
+  background: red;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#addBtn:focus{
+  outline: none;
+}
+
+#balanceTable{
+  /*position: absolute;*/
+  left: 550px;
+  margin: auto;
+}
+
+#balanceTable, table, th, td{
+  padding: 0 20px;
+}
+
+.balanceHeader{
+  font-size: 32px;
+}
+
+.balanceCol{
+  padding: 10px;
+}
+
+#budgetP{
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#expenseP{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#balanceP{
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.icon{
+  width: 50px;
+}
+
+.editIcon{
+  width: 15px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.editIcon:hover{
+  width: 15px;
+  cursor: pointer;
+  background: rgb(0, 119, 128);
+  border: 0px solid black;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+#expensesTable{
+  /*position: absolute;*/
+  left: 640px;
+  top: 303px;
+  border: 2px solid rgb(0, 119, 128);
+  border-radius: 5px;
+  width: 405px;
+  margin: auto;
+  padding: 20px 0;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.3);
+  font-size: 20px;
+}
+
+@media (max-width: 1120px){
+  #balanceTable > table, th, td{
+    padding: 0 5px;
+  }
+  .balanceCol{
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1012px){
+  #balanceTable{
+    top: 35%;
+    left: 5%;
+  }
+  .formExpense{
+    top: 60%;
+  }
+  #expensesTable{
+    top: 100%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 600px){
+  .formBudget{
+    left: 10%;
+  }
+  .formExpense{
+    left: 10%;
+  }
+}
+
+@media (max-width: 520px){
+  #balanceTable{
+    top: 35%;
+    left: -2%;
+  }
+}
