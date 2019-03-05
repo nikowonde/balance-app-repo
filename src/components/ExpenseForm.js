@@ -12,7 +12,7 @@ const Expense = (props) => {
                 </label>
                 <label id='expenseLabel2'>
                     Enter expense amount: <br />
-                    <input type='number' id='expenseValue' onChange={props.onExpenseValueInput} required value={props.expenseValue} min='0' step='1' pattern='\d* [0-9]' maxlength='10' /> <br />
+                    <input type='number' id='expenseValue' onChange={props.onExpenseValueInput} required value={props.expenseValue} min='0' step='.01' pattern='\d* [0-9]' maxlength='10' /> <br />
                 </label>
                 {props.expenseLabel.length > 0 && props.expenseValue > 0 ? <button id='addBtn' onClick={props.onExpenseSubmit}>Add expense</button> : <button id='addBtn-disabled' onClick={props.handleError}>Add expense</button>}
             </form>
