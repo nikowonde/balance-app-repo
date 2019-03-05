@@ -9,7 +9,7 @@ class Budget extends React.Component {
                 <form className='formBudget' id="budgetForm">
                     <label id='budgetLabel'>
                         Enter your budget here: <br />
-                        <input type='number' id='budgetValue' onChange={this.props.onBudgetInput} required autoFocus min='0' step='1' pattern='\d* [0-9]' /> <br />
+                        <input type='number' id='budgetValue' onChange={this.props.onBudgetInput} required autoFocus min='0' step='1' pattern='\d* [0-9]' maxlength='10' /> <br />
                     </label>
                     {this.props.budget > 0 ? <button id='calcBtn' type='submit' onClick={this.props.onSubmitClick}>Calculate</button> : <button id='calcBtn-disabled' onClick={this.props.handleError}>Calculate</button>}
                 </form>
