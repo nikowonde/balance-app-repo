@@ -7,7 +7,7 @@ const Expense = (props) => {
             <span style={props.styles}><p>Expense name and value cannot be Empty and Negative</p></span>
             <form className='formExpense' id='expenseForm'>
                 <label id='expenseLabel1'>
-                    Enter your expense: <br />
+                    Name your expense: <br />
                     <input type='text' id='expenseText' onChange={props.onExpenseLabelInput} required value={props.expenseLabel} /> <br />
                 </label>
                 <label id='expenseLabel2'>
